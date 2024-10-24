@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Marcos Gual</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navBar" class="nav-bar">
+      <div class="logo">marcos gual</div>
+      <div>
+        <ul class="nav-bar-links">
+          <li><a href="./index.html#about">acerca de</a></li>
+          <li><a href="./index.html#technologies">experiencia</a></li>
+          <li><a href="./index.html#projects">proyectos</a></li>
+          <li><a href="./index.html#contact">contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="burgerNav">
+      <div class="logo">marcos gual</div>
+      <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleNavMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="burger-links">
+        <li>
+          <a href="/index.html#about" onclick="toggleNavMenu()">acerca de</a>
+        </li>
+        <li>
+          <a href="./index.html#technologies" onclick="toggleNavMenu()"
+            >experiencia</a
+          >
+        </li>
+        <li>
+          <a href="./index.html#projects" onclick="toggleNavMenu()"
+            >proyectos</a
+          >
+        </li>
+        <li>
+          <a href="./index.html#contact" onclick="toggleNavMenu()">contacto</a>
+        </li>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section--pic-container">
+        <img src="./assets/personal_pic02.jpg" alt="foto de perfil" />
+      </div>
+      <div class="section--text">
+        <p class="section--text-p1">hola, soy</p>
+        <h1 class="title">marcos</h1>
+        <p class="section--text-p2">desarrollador fullstack</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/cvMarcosGual_FullStackDeveloper.pdf')"
+          >
+            bajar cv
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            contacto
+          </button>
+        </div>
+        <div class="socials-container">
+          <img
+            src="./assets/linkedin2.png"
+            alt="Mi perfil de Linkedin"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/marcos-gual-/'"
+          />
+          <img
+            src="./assets/github_logo_25231.png"
+            alt="Mi perfil de Github"
+            class="icon"
+            onclick="location.href='https://github.com/MarcosGual'"
+          />
+        </div>
+      </div>
+      <img
+        src="./assets/down_arrow01.png"
+        alt="ícono flecha hacia abajo"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about" class="about">
+      <p class="section--text-p1">más</p>
+      <h1 class="title">acerca de mí</h1>
+      <div class="section-container">
+        <div class="section--pic-container about--pic-container">
+          <img
+            class="about-pic"
+            src="./assets/download20241004201015.png"
+            alt="foto de perfil"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div>
+                <img
+                  src="./assets/experience02_icon_5470067-200.png"
+                  alt="ícono de experiencia"
+                  class="icon"
+                />
+                <h3>experiencia</h3>
+              </div>
+              <p>
+                👨🏻‍🏫 más de 2 años trabajando como <br />
+                profesor de programación web y mobile
+              </p>
+              <p>
+                🧑🏻‍💻 casi 1 año trabajando como <br />
+                desarrollador fullstack
+              </p>
+            </div>
+            <div class="details-container">
+              <div>
+                <img
+                  src="./assets/education-icon01.png"
+                  alt="ícono de experiencia"
+                  class="icon"
+                />
+                <h3>educación</h3>
+              </div>
+              <p>
+                🎓 recibido de <br />técnico universitario en programación
+                <br />(utn córdoba)
+              </p>
+              <!-- <p> casi 1 año trabajando como <br> desarrollador fullstack</p> -->
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Soy desarrollador, profesor y, sobre todo, un apasionado desde
+              siempre por el mundo de la tecnología y la computación. Empecé mi
+              camino académico y laboral en el ámbito de las ciencias
+              económicas, pero decidí cambiarme al mundo IT y actualmente me
+              dedico esencialmente a programar y a enseñar programación.
+            </p>
+            <br />
+            <p>
+              disfruto aplicando mis conocimientos en proyectos, resolviendo
+              problemas (e inventando soluciones), y creo en el constante
+              aprendizaje a través de la práctica y el error. Siempre estoy
+              leyendo algo nuevo o formándome, ya sea para repasar fundamentos,
+              aprender habilidades avanzadas, o conocer nuevas tecnologías,
+              cosas que intento transmitir a otros a través de la docencia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/down_arrow01.png"
+        alt="ícono flecha hacia abajo"
+        class="icon arrow"
+        onclick="location.href='./#technologies'"
+      />
+    </section>
+    <section id="technologies">
+      <p class="section--text-p1">manejo las siguientes</p>
+      <h1 class="title">tecnologías</h1>
+      <div class="technologies-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-subtitle">frontend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>html-css</h3>
+                <p>avanzado</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>react</h3>
+                <p>avanzado</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>react native</h3>
+                <p>intermedio</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>angular</h3>
+                <p>intermedio</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>winforms</h3>
+                <p>intermedio</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>jquery</h3>
+                <p>básico</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-subtitle">backend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>node</h3>
+                <p>avanzado</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>express</h3>
+                <p>avanzado</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>.net</h3>
+                <p>intermedio</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>spring boot</h3>
+                <p>intermedio</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>sql</h3>
+                <p>avanzado</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>mongodb</h3>
+                <p>intermedio</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-subtitle">lenguajes y otros</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>javascript</h3>
+                <p>avanzado</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>typescript</h3>
+                <p>avanzado</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>c#</h3>
+                <p>intermedio</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>java</h3>
+                <p>intermedio</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>docker</h3>
+                <p>intermedio</p>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/Check-Mark.png"
+                  alt="checkmark"
+                />
+                <h3>inglés</h3>
+                <p>b2</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/down_arrow01.png"
+        alt="ícono flecha hacia abajo"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section--text-p1">explorá mis</p>
+      <h1 class="title">proyectos recientes</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects_01.png"
+                alt="proyecto 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-subtitle project-title">proyecto uno</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.github.com'"
+              >
+                github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.ejemplo.com'"
+              >
+                demo en vivo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects_01.png"
+                alt="proyecto 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-subtitle project-title">proyecto dos</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.github.com'"
+              >
+                github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.ejemplo.com'"
+              >
+                demo en vivo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects_01.png"
+                alt="proyecto 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-subtitle project-title">proyecto tres</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.github.com'"
+              >
+                github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.ejemplo.com'"
+              >
+                demo en vivo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/down_arrow01.png"
+        alt="ícono flecha hacia abajo"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section--text-p1">estemos en</p>
+      <h1 class="title">contacto</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email-black.png"
+            alt="email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:marcos.gual@outlook.com">marcos.gual@outlook.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin2.png"
+            alt="linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/marcos-gual-/">linkedin</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div>
+          <ul class="nav-bar-links">
+            <li><a href="./index.html#about">acerca de</a></li>
+            <li><a href="./index.html#technologies">experiencia</a></li>
+            <li><a href="./index.html#projects">proyectos</a></li>
+            <li><a href="./index.html#contact">contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>copyright &#169; 2024 marcos gual. todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
