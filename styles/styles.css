@@ -1,3 +1,9 @@
+@property --offset {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,18 +63,17 @@ nav {
 }
 
 a {
-  text-decoration: none;
-  text-decoration-color: white;
   color: black;
+  text-underline-offset: var(--offset, 0.2em);
+  text-decoration: underline 0.15em;
+  transition: --offset 400ms, text-decoration-color 400ms;
 }
 
-a:hover {
-  color: grey;
-  text-decoration: solid underline;
-  /* font-weight: 700; */
-  text-underline-offset: 0.6rem;
-  text-decoration-color: var(--gray);
-  /* text-transform: capitalize; */
+a:hover,
+a:focus {
+  /* color: var(--dark-gray); */
+  --offset: 0.4em;
+  text-decoration-color: var(--dark-gray);
 }
 
 .logo {
