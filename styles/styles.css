@@ -406,6 +406,13 @@ btn.project-btn{
   flex-direction: column;
 }
 
+.technologies-details-container{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  margin-top: 8rem;
+}
+
 .project-title{
   margin: 1.1rem;
   color: black;
