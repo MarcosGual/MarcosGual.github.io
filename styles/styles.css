@@ -85,6 +85,11 @@ a:focus {
   cursor: default;
 }
 
+.switch-container{
+  text-align: center;
+  padding-top: 4px;
+}
+
 /* menú hamburguesa */
 #burgerNav {
   display: none;
