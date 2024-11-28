@@ -5,6 +5,12 @@ function toggleNavMenu() {
   $icon.classList.toggle("open");
 }
 
+function changeLocation(event, location){
+  console.log(event)
+  event.preventDefault();
+  window.location.href=`${location}`;
+}
+
 const toggleTheme = document.querySelector('#toggleTheme');
 
 toggleTheme.addEventListener('change', () => {

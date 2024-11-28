@@ -14,7 +14,7 @@
 :root {
   --dark-gray: rgb(78, 78, 78);
   --gray: rgb(180, 180, 180);
-  --black: rgb(53, 53, 53);
+  --contrast: rgb(53, 53, 53);
   --grey-border: rgb(161, 161, 161);
   --background-color-primary: #ffffff;
   --background-color-secondary: #eeeeee;
@@ -28,7 +28,8 @@ html {
 html[data-theme="dark"] {
   --background-color-primary: #10162a;
   --background-color-secondary: #151e39;
-  --text-color: #94a3b8;
+  --text-color: #f1f1f1;
+  --contrast: rgb(78, 78, 78);
 }
 
 body {
@@ -272,7 +273,7 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: var(--black);
+  background: var(--contrast);
   color: white;
 }
 
@@ -283,6 +284,15 @@ section {
 .btn-color-2 {
   background: none;
 }
+
+html[data-theme= "dark"] .btn{
+  color: white;
+}
+
+html[data-theme= "dark"] .btn:hover{
+  background-color: black;
+}
+
 
 .btn-color-2:hover {
   border: white 0.1rem solid;
@@ -328,12 +338,17 @@ section {
   bottom: 2.5rem;
 }
 
+img.icon{
+  background-color: white;
+  border-radius: 50%;
+}
+
 .details-container {
   padding: 1.5rem;
   text-align: center;
   /* max-width: 700px; */
   flex: 1;
-  background: white;
+  background: var(--background-color-secondary);
   border-radius: 1rem;
   border: var(--dark-gray) 0.1rem solid;
   border-color: var(--grey-border);
@@ -455,7 +470,7 @@ btn.project-btn {
   border-radius: 1rem;
   border: var(--black) 0.1rem solid;
   /* border-color: var(--grey-border); */
-  background: rgb(251, 251, 251);
+  background-color: var(--background-color-secondary);
   margin: 8rem auto;
   padding: 0.6rem;
 }
