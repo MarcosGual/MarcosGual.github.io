@@ -16,14 +16,25 @@
   --gray: rgb(180, 180, 180);
   --black: rgb(53, 53, 53);
   --grey-border: rgb(161, 161, 161);
+  --background-color-primary: #ffffff;
+  --background-color-secondary: #eeeeee;
+  --text-color: #333333;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+html[data-theme="dark"] {
+  --background-color-primary: #10162a;
+  --background-color-secondary: #151e39;
+  --text-color: #94a3b8;
+}
+
 body {
   font-family: "Roboto Slab", serif;
+  background-color: var(--background-color-primary);
+  color: var(--text-color);
   /* margin: 0 6rem; */
 }
 
@@ -34,10 +45,11 @@ h2,
 h3,
 h4 {
   font-family: "Inter", sans-serif;
+  color: var(--text-color);
 }
 
 p {
-  color: var(--dark-gray);
+  color: var(--text-color);
 }
 
 a,
@@ -63,7 +75,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: var(--text-color);
   text-underline-offset: var(--offset, 0.2em);
   text-decoration: underline 0.15em;
   transition: --offset 400ms, text-decoration-color 400ms;
@@ -85,7 +97,7 @@ a:focus {
   cursor: default;
 }
 
-.switch-container{
+.switch-container {
   text-align: center;
   padding-top: 4px;
 }
@@ -109,7 +121,7 @@ a:focus {
   cursor: pointer;
 }
 
-.burger-icon > span {
+.burger-icon>span {
   width: 100%;
   height: 3px;
   background-color: black;
@@ -169,7 +181,7 @@ a:focus {
   transform: none;
 }
 
-.section--pic-container > img {
+.section--pic-container>img {
   border-radius: 50%;
 }
 
@@ -340,7 +352,7 @@ section {
   margin: auto 0;
 }
 
-.section--pic-container.about--pic-container > img {
+.section--pic-container.about--pic-container>img {
   border-radius: 2rem;
   margin-top: 1rem;
 }
@@ -393,50 +405,50 @@ article .icon {
   width: 90%;
 }
 
-project-title{
+project-title {
   margin: 1rem;
   color: black;
 }
 
-btn.project-btn{
+btn.project-btn {
   color: black;
   border: var(--grey-border);
 }
 
-.experience-subtitle{
+.experience-subtitle {
   /* color: rgb(84,84,84); */
   font-weight: 600;
   font-size: 1.7rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container{
+.experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.technologies-details-container{
+.technologies-details-container {
   /* display: flex;
   flex-direction: column;
   justify-content: space-between; */
   margin-top: 8rem;
 }
 
-.project-title{
+.project-title {
   margin: 1.1rem;
   color: black;
 }
 
 /* contacto */
-#contact{
+#contact {
   display: flex;
   /* justify-content; */
   flex-direction: column;
   height: 75vh;
 }
 
-.contact-info-upper-container{
+.contact-info-upper-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,7 +460,7 @@ btn.project-btn{
   padding: 0.6rem;
 }
 
-.contact-info-container{
+.contact-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -456,27 +468,27 @@ btn.project-btn{
   margin: 1rem;
 }
 
-.contact-info-container p{
+.contact-info-container p {
   font-size: larger;
 }
 
-.contact-icon{
+.contact-icon {
   cursor: default;
   height: 3rem;
 }
 
-.contact-info-container>img[alt="linkedin icon"]{
+.contact-info-container>img[alt="linkedin icon"] {
   border-radius: 50%;
 }
 
 /* .email-icon */
 
-footer{
+footer {
   height: 25vh;
   margin: 0 1rem;
 }
 
-footer>p{
+footer>p {
   text-align: center;
   color: var(--dark-gray);
 }
