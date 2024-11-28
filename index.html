@@ -27,10 +27,10 @@
     <nav id="navBar" class="nav-bar">
       <div class="logo">marcos gual</div>
       <ul class="nav-bar-links">
-        <li><a href="./index.html#about">acerca de</a></li>
-        <li><a href="./index.html#technologies">experiencia</a></li>
-        <li><a href="./index.html#projects">proyectos</a></li>
-        <li><a href="./index.html#contact">contacto</a></li>
+        <li><a href="#about" onclick="$event.preventDefault()">acerca de</a></li>
+        <li><a href="#technologies" onclick="$event.preventDefault()">experiencia</a></li>
+        <li><a href="#projects" onclick="$event.preventDefault()">proyectos</a></li>
+        <li><a href="#contact" onclick="$event.preventDefault()">contacto</a></li>
         <li>
           <div class="switch-container">
             <label class="theme-toggle" title="Toggle theme">
@@ -79,20 +79,20 @@
       </div>
       <div class="burger-links">
         <li>
-          <a href="/index.html#about" onclick="toggleNavMenu()">acerca de</a>
+          <a href="#about" onclick="toggleNavMenu()">acerca de</a>
         </li>
         <li>
-          <a href="./index.html#technologies" onclick="toggleNavMenu()"
+          <a href="#technologies" onclick="toggleNavMenu()"
             >experiencia</a
           >
         </li>
         <li>
-          <a href="./index.html#projects" onclick="toggleNavMenu()"
+          <a href="#projects" onclick="toggleNavMenu()"
             >proyectos</a
           >
         </li>
         <li>
-          <a href="./index.html#contact" onclick="toggleNavMenu()">contacto</a>
+          <a href="#contact" onclick="toggleNavMenu()">contacto</a>
         </li>
       </div>
     </nav>
@@ -135,7 +135,7 @@
         src="./assets/down_arrow01.png"
         alt="ícono flecha hacia abajo"
         class="icon arrow"
-        onclick="location.href='./#about'"
+        onclick="changeLocation(event, '#about')"
       />
     </section>
     <section id="about" class="about">
@@ -209,7 +209,7 @@
         src="./assets/down_arrow01.png"
         alt="ícono flecha hacia abajo"
         class="icon arrow"
-        onclick="location.href='./#technologies'"
+        onclick="changeLocation(event, '#technologies')"
       />
     </section>
     <section id="technologies">
@@ -400,7 +400,7 @@
         src="./assets/down_arrow01.png"
         alt="ícono flecha hacia abajo"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="changeLocation(event, './#projects')"
       />
     </section>
     <section id="projects">
@@ -487,7 +487,7 @@
         src="./assets/down_arrow01.png"
         alt="ícono flecha hacia abajo"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="changeLocation(event,'#contact')"
       />
     </section>
     <section id="contact">
@@ -520,11 +520,11 @@
       <nav>
         <div>
           <ul class="nav-bar-links">
-            <li><a href="./index.html#navBar">inicio</a></li>
-            <li><a href="./index.html#about">acerca de</a></li>
-            <li><a href="./index.html#technologies">experiencia</a></li>
-            <li><a href="./index.html#projects">proyectos</a></li>
-            <li><a href="./index.html#contact">contacto</a></li>
+            <li><a href="#navBar" onclick="$event.preventDefault()">inicio</a></li>
+            <li><a href="#about" onclick="$event.preventDefault()">acerca de</a></li>
+            <li><a href="#technologies" onclick="$event.preventDefault()">experiencia</a></li>
+            <li><a href="#projects" onclick="$event.preventDefault()">proyectos</a></li>
+            <li><a href="#contact" onclick="$event.preventDefault()">contacto</a></li>
           </ul>
         </div>
       </nav>
