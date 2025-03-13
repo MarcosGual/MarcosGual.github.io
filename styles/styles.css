@@ -414,11 +414,11 @@ article .icon {
   /* background: rgb(251, 251, 251); */
 }
 
-.project-img {
+img.project-img {
   border-radius: 1rem;
-  height: 90%;
+  height: auto;
   width: 90%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .project-title {
