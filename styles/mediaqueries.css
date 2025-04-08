@@ -151,6 +151,10 @@
   div.details-container{
     margin-top: 2.5rem;
   }
+
+  img.project-img{
+    height: fit-content;
+  }
 }
 
 @media screen and (max-width: 1400px) {
