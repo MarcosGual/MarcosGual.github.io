@@ -416,7 +416,7 @@ article .icon {
 
 img.project-img {
   border-radius: 1rem;
-  height: auto;
+  height: 80%;
   width: 90%;
   object-fit: cover;
 }
@@ -429,6 +429,18 @@ img.project-img {
 btn.project-btn {
   color: black;
   border: var(--grey-border);
+}
+
+.tech-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-icons i {
+  font-size: 24px;
 }
 
 .experience-subtitle {

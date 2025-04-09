@@ -22,15 +22,29 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/classic.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
   </head>
   <body>
     <nav id="navBar" class="nav-bar">
       <div class="logo">marcos gual</div>
       <ul class="nav-bar-links">
-        <li><a href="#about" onclick="$event.preventDefault()">acerca de</a></li>
-        <li><a href="#technologies" onclick="$event.preventDefault()">experiencia</a></li>
-        <li><a href="#projects" onclick="$event.preventDefault()">proyectos</a></li>
-        <li><a href="#contact" onclick="$event.preventDefault()">contacto</a></li>
+        <li>
+          <a href="#about" onclick="$event.preventDefault()">acerca de</a>
+        </li>
+        <li>
+          <a href="#technologies" onclick="$event.preventDefault()"
+            >experiencia</a
+          >
+        </li>
+        <li>
+          <a href="#projects" onclick="$event.preventDefault()">proyectos</a>
+        </li>
+        <li>
+          <a href="#contact" onclick="$event.preventDefault()">contacto</a>
+        </li>
         <li>
           <div class="switch-container">
             <label class="theme-toggle" title="Toggle theme">
@@ -82,14 +96,10 @@
           <a href="#about" onclick="toggleNavMenu()">acerca de</a>
         </li>
         <li>
-          <a href="#technologies" onclick="toggleNavMenu()"
-            >experiencia</a
-          >
+          <a href="#technologies" onclick="toggleNavMenu()">experiencia</a>
         </li>
         <li>
-          <a href="#projects" onclick="toggleNavMenu()"
-            >proyectos</a
-          >
+          <a href="#projects" onclick="toggleNavMenu()">proyectos</a>
         </li>
         <li>
           <a href="#contact" onclick="toggleNavMenu()">contacto</a>
@@ -193,9 +203,10 @@
             <p>
               Soy desarrollador, profesor y, sobre todo, un apasionado desde
               siempre por el mundo de la tecnología y la computación. Empecé mi
-              camino académico y laboral en el ámbito de las ciencias
-              económicas y la administración, pero decidí integrar el mundo IT a mi perfil 
-              y actualmente también me dedico a programar y a enseñar programación.
+              camino académico y laboral en el ámbito de las ciencias económicas
+              y la administración, pero decidí integrar el mundo IT a mi perfil
+              y actualmente también me dedico a programar y a enseñar
+              programación.
             </p>
             <br />
             <p>
@@ -415,36 +426,19 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/ALERTAPP.png"
-                alt="proyecto 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-subtitle project-title">alertapp (tesis)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/MarcosGual/alertapp'"
-              >
-                github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.ejemplo.com'"
-              >
-                demo en vivo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
                 src="./assets/programacionblog.png"
                 alt="proyecto 1"
                 class="project-img"
               />
             </div>
             <h2 class="experience-subtitle project-title">blog personal</h2>
+            <div class="tech-icons">
+              <span>tech stack: </span>
+              <i class="devicon-react-original-wordmark"></i>
+              <i class="devicon-nextjs-original-wordmark"></i>
+              <i class="devicon-typescript-plain"></i>
+              <i class="devicon-mongodb-plain-wordmark"></i>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -468,7 +462,16 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-subtitle project-title">directorio de juegos</h2>
+            <h2 class="experience-subtitle project-title">
+              directorio de juegos
+            </h2>
+            <div class="tech-icons">
+              <span>tech stack: </span>
+              <i class="devicon-react-original-wordmark"></i>
+              <i class="devicon-nextjs-original-wordmark"></i>
+              <i class="devicon-typescript-plain"></i>
+              <i class="devicon-sanity-plain"></i>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -482,6 +485,38 @@
               >
                 demo en vivo
               </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ALERTAPP.png"
+                alt="proyecto 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-subtitle project-title">alertapp (tesis)</h2>
+            <div class="tech-icons">
+              <span>tech stack: </span>
+              <i class="devicon-react-original"></i>
+              <i class="devicon-express-original-wordmark"></i>
+              <i class="devicon-mongodb-plain-wordmark"></i>
+              <i class="devicon-mongoose-original-wordmark"></i>
+              <i class="devicon-firebase-plain-wordmark"></i>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/MarcosGual/alertapp'"
+              >
+                github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.ejemplo.com'"
+              >
+                demo en vivo
+              </button> -->
             </div>
           </div>
         </div>
@@ -524,11 +559,25 @@
       <nav>
         <div>
           <ul class="nav-bar-links">
-            <li><a href="#navBar" onclick="$event.preventDefault()">inicio</a></li>
-            <li><a href="#about" onclick="$event.preventDefault()">acerca de</a></li>
-            <li><a href="#technologies" onclick="$event.preventDefault()">experiencia</a></li>
-            <li><a href="#projects" onclick="$event.preventDefault()">proyectos</a></li>
-            <li><a href="#contact" onclick="$event.preventDefault()">contacto</a></li>
+            <li>
+              <a href="#navBar" onclick="$event.preventDefault()">inicio</a>
+            </li>
+            <li>
+              <a href="#about" onclick="$event.preventDefault()">acerca de</a>
+            </li>
+            <li>
+              <a href="#technologies" onclick="$event.preventDefault()"
+                >experiencia</a
+              >
+            </li>
+            <li>
+              <a href="#projects" onclick="$event.preventDefault()"
+                >proyectos</a
+              >
+            </li>
+            <li>
+              <a href="#contact" onclick="$event.preventDefault()">contacto</a>
+            </li>
           </ul>
         </div>
       </nav>
