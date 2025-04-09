@@ -138,6 +138,7 @@ a:focus {
   width: fit-content;
   overflow: hidden;
   transition: all 0.4 ease-in-out;
+  z-index: 1;
 }
 
 .burger-links li {
