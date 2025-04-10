@@ -424,7 +424,8 @@ img.project-img {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  font-size: 1.5rem;
+  /* color: black; */
 }
 
 btn.project-btn {
@@ -465,8 +466,8 @@ btn.project-btn {
 }
 
 .project-title {
-  margin: 1.1rem;
-  color: black;
+  margin: 1.2rem;
+  /* color: black; */
 }
 
 /* contacto */
