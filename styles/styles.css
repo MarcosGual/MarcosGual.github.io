@@ -339,6 +339,12 @@ html[data-theme= "dark"] .btn:hover{
   bottom: 2.5rem;
 }
 
+.arrow-up {
+  position: absolute;
+  right: -5rem;
+  bottom: 5.5rem;
+}
+
 img.icon{
   background-color: white;
   border-radius: 50%;
