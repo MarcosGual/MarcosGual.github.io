@@ -351,11 +351,15 @@ html[data-theme="dark"] .btn:hover {
 }
 
 .arrow-up.bottom{
-  bottom: -6rem;
+  bottom: -5.8rem;
 }
 
 .arrow-up:hover {
   opacity: 1;
+}
+
+.top{
+  bottom: 4rem;
 }
 
 img.icon {
